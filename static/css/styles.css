@@ -5,13 +5,14 @@
     --background-color: #f4f4f4;
 }
 
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 h1, h2, h3 {
@@ -170,6 +171,16 @@ button[type="submit"]:hover {
     color: #555;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
@@ -264,6 +275,11 @@ button[type="submit"]:hover {
     font-size: 1.5rem;
     text-decoration: none;
 }
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px; /* same height as footer */
+  }
 
 a:hover {
     color: #3498db;
