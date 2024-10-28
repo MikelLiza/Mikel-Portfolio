@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <h1>About Me</h1>
-    <p>Here’s some information about me...</p>
-</body>
+
+{% extends "base.html" %}
+
+{% block title %}About Me{% endblock %}
+
+{% block body %}
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Who am I?</h1>
+        <p>I am Mikel Lizarralde, a 23 years old Software Developer 
+        who is passionate about learning and developing new things. I became 
+        a computer science graduate in 2023 in the University of Surrey after 4 years of
+        hard studying. I have used many different technologies in my projects, to learn
+        and further improve my skills. This eportfolio is an example of one such project.
+        I am currently learning as many programming languages as I can, focusing on Java
+        and C++ as of now.</p>
+
+        <p></p>
+    </div>
+</div>
+
+{% endblock %}
+
 </html>
